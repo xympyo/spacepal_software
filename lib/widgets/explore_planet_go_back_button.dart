@@ -15,24 +15,23 @@ class _ExplorePlanetGoBackButtonState extends State<ExplorePlanetGoBackButton> {
     return Container(
       width: double.infinity,
       height: 60,
-      decoration: BoxDecoration(
-        color: kWhiteColor,
-        borderRadius: BorderRadius.circular(defaultRadius),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          TextButton(
-            onPressed: () {},
-            child: Text(
-              'Explore Other Planet',
-              style: whiteTextStyle.copyWith(
-                fontSize: 20,
-                fontWeight: bold,
-              ),
-            ),
-          )
-        ],
+      child: TextButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        style: TextButton.styleFrom(
+          backgroundColor: kWhiteColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(defaultRadius),
+          ),
+        ),
+        child: Text(
+          'Explore Other Planet',
+          style: blackTextStyle.copyWith(
+            fontSize: 20,
+            fontWeight: bold,
+          ),
+        ),
       ),
     );
   }

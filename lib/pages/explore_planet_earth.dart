@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spacepal_project/shared/theme.dart';
 import 'package:spacepal_project/widgets/explore_planet_background.dart';
 import 'package:spacepal_project/widgets/explore_planet_cards.dart';
+import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/explore_planets.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
 
@@ -104,7 +105,11 @@ class ExplorePlanetEarth extends StatelessWidget {
                           "Fun fact: The Moon's gravity creates tides—the rise and fall of the ocean's water.",
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 40,
+                    ),
+                    ExplorePlanetGoBackButton(),
+                    SizedBox(
+                      height: 40,
                     ),
                   ],
                 ),
