@@ -19,7 +19,7 @@ class ReadStoryCard extends StatelessWidget {
     Widget image() {
       return Container(
         width: double.infinity,
-        height: 100,
+        height: 120,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(defaultRadius),
           image: DecorationImage(
@@ -33,7 +33,7 @@ class ReadStoryCard extends StatelessWidget {
     Widget customShadow() {
       return Container(
         width: double.infinity,
-        height: 100,
+        height: 120,
         decoration: ShapeDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -54,6 +54,8 @@ class ReadStoryCard extends StatelessWidget {
       return Container(
         margin: const EdgeInsets.only(
           top: 12,
+          left: 12,
+          right: 12,
         ),
         child: Column(
           children: [
