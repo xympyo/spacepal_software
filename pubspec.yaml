@@ -100,6 +100,12 @@ flutter:
     - assets/mars_card_image3.png
     - assets/mars_card_image4.png
     - assets/mars_card_image5.png
+    - assets/explore_screen_venus_page.png
+    - assets/venus_card_image1.png
+    - assets/venus_card_image2.png
+    - assets/venus_card_image3.png
+    - assets/venus_card_image4.png
+    - assets/venus_card_image5.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

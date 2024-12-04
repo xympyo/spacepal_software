@@ -6,8 +6,8 @@ import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/explore_planets.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
 
-class ExplorePlanetMars extends StatelessWidget {
-  const ExplorePlanetMars({super.key});
+class ExplorePlanetVenus extends StatelessWidget {
+  const ExplorePlanetVenus({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class ExplorePlanetMars extends StatelessWidget {
         children: [
           ExplorePlanetBackground(
             height: screenHeight,
-            imageUrl: 'assets/explore_screen_mars_page.png',
+            imageUrl: 'assets/explore_screen_venus_page.png',
           ),
           ListView(
             children: [
@@ -29,7 +29,7 @@ class ExplorePlanetMars extends StatelessWidget {
                 ),
                 child: const HelloTextHeader(
                   firstText: 'Welcome, Space Travelers!',
-                  secondText: 'To Mars.',
+                  secondText: 'To Venus.',
                   needImage: false,
                 ),
               ),
@@ -37,7 +37,7 @@ class ExplorePlanetMars extends StatelessWidget {
                 height: 20,
               ),
               const ExplorePlanets(
-                planetName: 'Mars',
+                planetName: 'Venus',
               ),
               Container(
                 margin: EdgeInsets.only(
@@ -49,58 +49,58 @@ class ExplorePlanetMars extends StatelessWidget {
                   children: [
                     ExplorePlanetCards(
                       height: 154,
-                      imageUrl: 'assets/mars_card_image1.png',
+                      imageUrl: 'assets/venus_card_image1.png',
                       titleDesc: 'Basic Characteristics',
                       firstDesc:
-                          "Mars is often called the Red Planet because its surface looks rusty, like old iron",
+                          "Venus is Earth's “twin” because it's about the same size. But don't be fooled—Venus is VERY different!",
                       secondDesc:
-                          "It's much colder and smaller than Earth, with dusty plains, rocky hills, and giant mountains.",
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    ExplorePlanetCards(
-                      height: 172,
-                      imageUrl: 'assets/mars_card_image2.png',
-                      titleDesc: 'Geography',
-                      firstDesc:
-                          "Mars has the largest volcano in the Solar System: Olympus Mons. It's three times taller than Mount Everest!",
-                      secondDesc:
-                          "The planet also has a massive canyon system, Valles Marineris, which is 4,000 kilometers long.",
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    ExplorePlanetCards(
-                      height: 136,
-                      imageUrl: 'assets/mars_card_image3.png',
-                      titleDesc: 'Size and Gravity',
-                      firstDesc:
-                          "Mars is smaller than Earth—about half its size.",
-                      secondDesc:
-                          "Gravity on Mars is weaker, so if you weigh 30 kg on Earth, you'd weigh only 11 kg on Mars!",
+                          "Venus is the hottest planet in the Solar System, even though Mercury is closer to the Sun",
                     ),
                     SizedBox(
                       height: 20,
                     ),
                     ExplorePlanetCards(
                       height: 154,
-                      imageUrl: 'assets/mars_card_image4.png',
+                      imageUrl: 'assets/venus_card_image2.png',
+                      titleDesc: 'Geography',
+                      firstDesc:
+                          "Venus is covered by thick clouds that trap heat. Underneath, there are mountains, volcanoes, and flat plains.",
+                      secondDesc:
+                          "Its surface is rocky and cracked, like a giant dry desert.",
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    ExplorePlanetCards(
+                      height: 154,
+                      imageUrl: 'assets/venus_card_image3.png',
+                      titleDesc: 'Size and Gravity',
+                      firstDesc:
+                          "Venus is just a little smaller than Earth, but the difference is so small you'd hardly notice.",
+                      secondDesc:
+                          "Gravity on Venus is close to Earth's, so you wouldn't feel much lighter or heavier there.",
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    ExplorePlanetCards(
+                      height: 136,
+                      imageUrl: 'assets/venus_card_image4.png',
                       titleDesc: 'Temperature and Weather',
                       firstDesc:
-                          "Mars is super cold, with temperatures dropping to -80°C at night.",
+                          "Venus is over 450°C—hot enough to melt metal!",
                       secondDesc:
-                          "It has giant dust storms that can last for months. These storms are so big, they can cover the whole planet!",
+                          "Its air is filled with carbon dioxide and sulfuric acid clouds, so it's not safe for humans to breathe.",
                     ),
                     SizedBox(
                       height: 20,
                     ),
                     ExplorePlanetCards(
                       height: 106,
-                      imageUrl: 'assets/mars_card_image5.png',
+                      imageUrl: 'assets/venus_card_image5.png',
                       titleDesc: 'Moons',
                       firstDesc:
-                          "Mars has two tiny moons, Phobos and Deimos. They're not round like our Moon—they look more like potatoes!",
+                          "Venus has no moons. It's one of the few planets that doesn't have any!",
                     ),
                     SizedBox(
                       height: 160,
