@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spacepal_project/pages/explore_planet_earth.dart';
+import 'package:spacepal_project/pages/explore_planet_mars.dart';
 import 'package:spacepal_project/shared/theme.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
 import 'package:spacepal_project/widgets/planet_cards.dart';
@@ -86,7 +87,7 @@ class _ExplorePlanetPageState extends State<ExplorePlanetPage> {
                 Navigator.push(
                   localContext,
                   MaterialPageRoute(
-                    builder: (context) => const ExplorePlanetEarth(),
+                    builder: (context) => const ExplorePlanetMars(),
                   ),
                 );
               },

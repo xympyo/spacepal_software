@@ -76,17 +76,21 @@ class ExplorePlanetCards extends StatelessWidget {
               ),
               overflow: TextOverflow.visible,
             ),
-            const SizedBox(
-              height: 12,
-            ),
-            Text(
-              secondDesc,
-              style: whiteTextStyle.copyWith(
-                fontSize: 12,
-                fontWeight: light,
-              ),
-              overflow: TextOverflow.visible,
-            )
+            secondDesc == ''
+                ? const SizedBox()
+                : const SizedBox(
+                    height: 12,
+                  ),
+            secondDesc == ''
+                ? const SizedBox()
+                : Text(
+                    secondDesc,
+                    style: whiteTextStyle.copyWith(
+                      fontSize: 12,
+                      fontWeight: light,
+                    ),
+                    overflow: TextOverflow.visible,
+                  )
           ],
         ),
       );
