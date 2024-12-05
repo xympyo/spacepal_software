@@ -38,6 +38,7 @@ class ExplorePlanetVenus extends StatelessWidget {
               ),
               const ExplorePlanets(
                 planetName: 'Venus',
+                objUrl: 'assets/3d/planetEarth.obj',
               ),
               Container(
                 margin: EdgeInsets.only(

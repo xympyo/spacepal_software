@@ -35,6 +35,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
+  audioplayers: ^6.1.0
+  flutter_3d_controller: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -106,6 +108,7 @@ flutter:
     - assets/venus_card_image3.png
     - assets/venus_card_image4.png
     - assets/venus_card_image5.png
+    - assets/3d/planetEarth.obj
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
