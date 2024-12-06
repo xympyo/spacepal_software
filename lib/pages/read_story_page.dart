@@ -3,9 +3,14 @@ import 'package:spacepal_project/shared/theme.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
 import 'package:spacepal_project/widgets/read_story_card.dart';
 
-class ReadStoryPage extends StatelessWidget {
+class ReadStoryPage extends StatefulWidget {
   const ReadStoryPage({super.key});
 
+  @override
+  State<ReadStoryPage> createState() => _ReadStoryPageState();
+}
+
+class _ReadStoryPageState extends State<ReadStoryPage> {
   @override
   Widget build(BuildContext context) {
     return Container(

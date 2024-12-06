@@ -90,7 +90,7 @@ class ExplorePlanetCards extends StatelessWidget {
                       fontWeight: light,
                     ),
                     overflow: TextOverflow.visible,
-                  )
+                  ),
           ],
         ),
       );

@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cube/flutter_cube.dart';
 import 'package:spacepal_project/shared/theme.dart';
 
 class PlanetCards extends StatefulWidget {
   final String title;
   final String funFact;
+  final String objUrl;
+  final double objSize;
   final VoidCallback onTap;
   const PlanetCards({
     super.key,
     required this.title,
     required this.funFact,
     required this.onTap,
+    required this.objUrl,
+    required this.objSize,
   });
 
   @override
@@ -39,9 +44,17 @@ class _PlanetCardsState extends State<PlanetCards> {
             Container(
               width: 120,
               height: 120,
-              decoration: BoxDecoration(
-                color: kWhiteColor,
-                shape: BoxShape.circle,
+              child: Cube(
+                onSceneCreated: (Scene scene) => scene.world.add(
+                  Object(
+                    fileName: widget.objUrl,
+                    scale: Vector3(
+                      widget.objSize,
+                      widget.objSize,
+                      widget.objSize,
+                    ),
+                  ),
+                ),
               ),
             ),
             Container(

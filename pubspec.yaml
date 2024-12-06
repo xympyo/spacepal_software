@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   audioplayers: ^6.1.0
-  flutter_3d_controller: ^2.0.2
+  flutter_cube: ^0.1.1
 
 dev_dependencies:
   flutter_test:
@@ -81,14 +81,11 @@ flutter:
     - assets/explore_screen_page.png
     - assets/icon_rocket_explore_planet.png
     - assets/read_story_chapter1_img1.png
-    - assets/read_story_chapter1_img2.png
     - assets/read_story_chapter2_img1.png
     - assets/read_story_chapter3_img1.png
-    - assets/read_story_chapter3_img2.png
     - assets/read_story_chapter4_img1.png
     - assets/read_story_chapter5_img1.png
     - assets/read_story_chapter6_img1.png
-    - assets/read_story_chapter6_img2.png
     - assets/read_story_chapter7_img1.png
     - assets/earth_card_image1.png
     - assets/earth_card_image2.png
@@ -109,6 +106,22 @@ flutter:
     - assets/venus_card_image4.png
     - assets/venus_card_image5.png
     - assets/3d/planetEarth.obj
+    - assets/3d/planetMars.obj
+    - assets/3d/planetVenus.obj
+    - assets/3d/planetEarth.mtl
+    - assets/3d/planetMars.mtl
+    - assets/3d/planetVenus.mtl
+    - assets/3d/venusOuterLayer.png
+    - assets/3d/MarsPlanetLayer.png
+    - assets/read_story_chapter1_background.png
+    - assets/read_story_chapter2_background.png
+    - assets/read_story_chapter3_background.png
+    - assets/read_story_chapter4_background.png
+    - assets/read_story_chapter5_background.png
+    - assets/read_story_chapter6_background.png
+    - assets/read_story_chapter7_background.png
+    - assets/icon_space.png
+    - assets/funfact_screen_page.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -5,11 +5,13 @@ class HelloTextHeader extends StatelessWidget {
   final bool needImage;
   final String firstText;
   final String secondText;
+  final String imageUrl;
   final String color;
   const HelloTextHeader({
     super.key,
     required this.firstText,
     required this.secondText,
+    this.imageUrl = 'assets/icon_rocket_explore_planet.png',
     this.needImage = true,
     this.color = 'whiteTextStyle',
   });
@@ -47,9 +49,9 @@ class HelloTextHeader extends StatelessWidget {
             Container(
               height: needImage ? 20 : 0,
               width: needImage ? 20 : 0,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/icon_rocket_explore_planet.png'),
+                  image: AssetImage(imageUrl),
                 ),
               ),
             )

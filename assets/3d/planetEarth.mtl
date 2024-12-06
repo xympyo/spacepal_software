@@ -1,0 +1,92 @@
+# Blender 4.0.1 MTL File: 'Earth.blend'
+# www.blender.org
+
+newmtl 1.018
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/ocean.png
+map_Pr D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/oceanRoughness.png
+
+newmtl 1.019
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/earth.png
+map_Pr D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/earthRoughness.png
+
+newmtl Material.051
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/home.png
+map_Pr D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/homeRoughness.png
+
+newmtl Material.052
+Kd 0.574879 0.363368 0.072281
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+
+newmtl awan.009
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+
+newmtl three.009
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.300000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/tree.png
+map_Pr D:/University/Subject/Semester4/Wireless and Mobile Programming/project/assets/3d/textures/treeRoughness.png

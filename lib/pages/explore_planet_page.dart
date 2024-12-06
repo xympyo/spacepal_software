@@ -69,6 +69,8 @@ class _ExplorePlanetPageState extends State<ExplorePlanetPage> {
             PlanetCards(
               title: 'Earth',
               funFact: 'Where we live.',
+              objUrl: 'assets/3d/planetEarth.obj',
+              objSize: 10,
               onTap: () {
                 Navigator.push(
                   localContext,
@@ -84,6 +86,8 @@ class _ExplorePlanetPageState extends State<ExplorePlanetPage> {
             PlanetCards(
               title: 'Mars',
               funFact: 'The red planet.',
+              objUrl: 'assets/3d/planetMars.obj',
+              objSize: 8,
               onTap: () {
                 Navigator.push(
                   localContext,
@@ -99,6 +103,8 @@ class _ExplorePlanetPageState extends State<ExplorePlanetPage> {
             PlanetCards(
               title: 'Venus',
               funFact: 'It has a ring around it.',
+              objUrl: 'assets/3d/planetVenus.obj',
+              objSize: 8,
               onTap: () {
                 Navigator.push(
                   localContext,

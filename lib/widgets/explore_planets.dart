@@ -1,44 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:spacepal_project/shared/theme.dart';
-import 'package:flutter_3d_controller/flutter_3d_controller.dart';
+import 'package:flutter_cube/flutter_cube.dart';
 
 class ExplorePlanets extends StatelessWidget {
-  final String planetName;
   final String objUrl;
-  const ExplorePlanets(
-      {super.key, required this.planetName, required this.objUrl});
+  final String planetName;
+  final double planetSize;
+  const ExplorePlanets({
+    super.key,
+    required this.objUrl,
+    required this.planetName,
+    required this.planetSize,
+  });
 
   @override
   Widget build(BuildContext context) {
-    Flutter3DController controller = Flutter3DController();
-
-    return Column(
-      children: [
-        Container(
-          width: 214,
-          height: 214,
-          child: Flutter3DViewer.obj(
-            src: objUrl,
-            scale: 20,
-            cameraX: 0,
-            cameraY: 0,
-            cameraZ: 10,
-            onProgress: (double progress) => debugPrint(
-              'model loading progress : $progress',
+    return Container(
+      width: 214,
+      height: 214,
+      child: Cube(
+        onSceneCreated: (Scene scene) => scene.world.add(
+          Object(
+            fileName: objUrl,
+            scale: Vector3(
+              planetSize,
+              planetSize,
+              planetSize,
             ),
           ),
         ),
-        const SizedBox(
-          height: 12,
-        ),
-        Text(
-          planetName,
-          style: whiteTextStyle.copyWith(
-            fontSize: 28,
-            fontWeight: bold,
-          ),
-        )
-      ],
+      ),
     );
   }
 }

@@ -38,7 +38,8 @@ class ExplorePlanetMars extends StatelessWidget {
               ),
               const ExplorePlanets(
                 planetName: 'Mars',
-                objUrl: 'assets/3d/planetEarth.obj',
+                objUrl: 'assets/3d/planetMars.obj',
+                planetSize: 8,
               ),
               Container(
                 margin: EdgeInsets.only(
