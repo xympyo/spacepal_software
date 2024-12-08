@@ -1,19 +1,19 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:spacepal_project/shared/theme.dart';
 import 'package:spacepal_project/widgets/explore_planet_background.dart';
 import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/read_story_text_header.dart';
 import 'package:spacepal_project/widgets/read_story_texts.dart';
+import 'package:spacepal_project/shared/theme.dart';
 
-class ReadStoryPageCh1 extends StatefulWidget {
-  const ReadStoryPageCh1({super.key});
+class ReadStoryPageCh2 extends StatefulWidget {
+  const ReadStoryPageCh2({super.key});
 
   @override
-  State<ReadStoryPageCh1> createState() => _ReadStoryPageCh1State();
+  State<ReadStoryPageCh2> createState() => _ReadStoryPageCh2State();
 }
 
-class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
+class _ReadStoryPageCh2State extends State<ReadStoryPageCh2> {
   late final AudioPlayer player;
 
   @override
@@ -24,7 +24,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await Future.delayed(const Duration(seconds: 3));
-      await player.play(AssetSource('audio/screen1.mp3'));
+      await player.play(AssetSource('audio/screen2.mp3'));
     });
   }
 
@@ -47,7 +47,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
       children: [
         ExplorePlanetBackground(
           height: height,
-          imageUrl: 'assets/read_story_chapter1_background.png',
+          imageUrl: 'assets/read_story_chapter2_background.png',
         ),
         Container(
           margin: EdgeInsets.only(
@@ -56,8 +56,8 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
             right: defaultMargin,
           ),
           child: const ReadStoryTextHeader(
-            chapterNumber: 1,
-            title: 'Introduction',
+            chapterNumber: 2,
+            title: 'Mythology Begins - Chaos and Gaia',
           ),
         ),
         Container(
@@ -70,21 +70,14 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
             children: const [
               ReadStoryTexts(
                 texts:
-                    'A long, long time ago, before there were people, animals, or even trees, there was… nothing. Just a great big emptiness called Chaos.',
+                    "In the very beginning, there was Chaos, a huge empty space, dark and quiet. From this mysterious void, the first things appeared. The first being was Gaia, the Earth itself, and she was not just any planet—she was a goddess!",
               ),
               SizedBox(
                 height: 12,
               ),
               ReadStoryTexts(
                 texts:
-                    'But out of this nothingness, something amazing began to happen. The Earth, as we know it today, was born! And the story of how it happened is a mix of mystery, magic, and science.',
-              ),
-              SizedBox(
-                height: 12,
-              ),
-              ReadStoryTexts(
-                texts:
-                    "Let's go back in time and find out how the Earth was created, both in the ancient myths and the science of today!",
+                    "Gaia was the mother of everything on Earth. She gave birth to mountains, oceans, and forests. She even gave birth to Uranus, the sky, who became her partner. Together, Gaia and Uranus created the mighty Titans, giant, powerful beings who ruled the world.",
               ),
             ],
           ),

@@ -7,11 +7,13 @@ class ReadStoryCard extends StatelessWidget {
   final String imageUrl;
   final int chapterNumber;
   final String chapterTitle;
+  final VoidCallback onTap;
   const ReadStoryCard({
     super.key,
     required this.imageUrl,
     required this.chapterNumber,
     required this.chapterTitle,
+    required this.onTap,
   });
 
   @override
@@ -88,12 +90,15 @@ class ReadStoryCard extends StatelessWidget {
       );
     }
 
-    return Stack(
-      children: [
-        image(),
-        customShadow(),
-        customText(),
-      ],
+    return GestureDetector(
+      onTap: onTap,
+      child: Stack(
+        children: [
+          image(),
+          customShadow(),
+          customText(),
+        ],
+      ),
     );
   }
 }

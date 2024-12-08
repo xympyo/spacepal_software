@@ -5,6 +5,7 @@ import 'package:spacepal_project/widgets/explore_planet_cards.dart';
 import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/explore_planets.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
+import 'package:spacepal_project/widgets/open_camera_button.dart';
 
 class ExplorePlanetEarth extends StatelessWidget {
   const ExplorePlanetEarth({super.key});
@@ -106,6 +107,10 @@ class ExplorePlanetEarth extends StatelessWidget {
                       secondDesc:
                           "Fun fact: The Moon's gravity creates tides—the rise and fall of the ocean's water.",
                     ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    OpenCameraButton(),
                     SizedBox(
                       height: 160,
                     ),

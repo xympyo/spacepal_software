@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:spacepal_project/pages/fun_fact_earth_page.dart';
+import 'package:spacepal_project/pages/fun_fact_mars_page.dart';
 import 'package:spacepal_project/shared/theme.dart';
 import 'package:spacepal_project/widgets/explore_planet_background.dart';
 import 'package:spacepal_project/widgets/funfact_cards.dart';
@@ -78,27 +80,51 @@ class FunFactPage extends StatelessWidget {
                   left: defaultMargin,
                   right: defaultMargin,
                 ),
-                child: const Column(
+                child: Column(
                   children: [
                     FunfactCards(
                       objUrl: 'assets/3d/planetEarth.obj',
                       planetName: 'Earth',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const FunFactEarthPage(),
+                          ),
+                        );
+                      },
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     FunfactCards(
                       objUrl: 'assets/3d/planetMars.obj',
                       planetName: 'Mars',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => FunFactMarsPage(),
+                          ),
+                        );
+                      },
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     FunfactCards(
                       objUrl: 'assets/3d/planetVenus.obj',
                       planetName: 'Venus',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const FunFactEarthPage(),
+                          ),
+                        );
+                      },
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 160,
                     ),
                   ],

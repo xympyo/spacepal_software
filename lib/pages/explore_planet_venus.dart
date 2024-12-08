@@ -5,6 +5,7 @@ import 'package:spacepal_project/widgets/explore_planet_cards.dart';
 import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/explore_planets.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
+import 'package:spacepal_project/widgets/open_camera_button.dart';
 
 class ExplorePlanetVenus extends StatelessWidget {
   const ExplorePlanetVenus({super.key});
@@ -104,6 +105,7 @@ class ExplorePlanetVenus extends StatelessWidget {
                       firstDesc:
                           "Venus has no moons. It's one of the few planets that doesn't have any!",
                     ),
+                    OpenCameraButton(),
                     SizedBox(
                       height: 160,
                     ),

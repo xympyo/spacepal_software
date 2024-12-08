@@ -37,6 +37,7 @@ dependencies:
   google_fonts: ^6.2.1
   audioplayers: ^6.1.0
   flutter_cube: ^0.1.1
+  camera: ^0.11.0+2
 
 dev_dependencies:
   flutter_test:
@@ -122,6 +123,26 @@ flutter:
     - assets/read_story_chapter7_background.png
     - assets/icon_space.png
     - assets/funfact_screen_page.png
+    - assets/icon_speaker.png
+    - assets/audio/screen1.mp3
+    - assets/audio/screen2.mp3
+    - assets/audio/screen3.mp3
+    - assets/audio/screen4.mp3
+    - assets/audio/screen5.mp3
+    - assets/audio/screen6.mp3
+    - assets/audio/screen7.mp3
+    - assets/audio/screen8.mp3
+    - assets/icon_camera.png
+    - assets/funfact_screen_earth1.png
+    - assets/funfact_screen_earth2.png
+    - assets/funfact_screen_earth3.png
+    - assets/funfact_screen_earth3_1.png
+    - assets/funfact_screen_mars1.png
+    - assets/funfact_screen_mars2.png
+    - assets/funfact_screen_mars3.png
+    - assets/icon_go_back.png
+    - assets/icon_heart.png
+    - assets/icon_heart_inactive.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

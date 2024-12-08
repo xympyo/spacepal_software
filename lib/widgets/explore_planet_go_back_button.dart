@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:spacepal_project/shared/theme.dart';
 
 class ExplorePlanetGoBackButton extends StatefulWidget {
-  const ExplorePlanetGoBackButton({super.key});
+  final String text;
+  final bool isWhiteMode;
+  const ExplorePlanetGoBackButton({
+    super.key,
+    this.text = 'Explore Other Planet',
+    this.isWhiteMode = true,
+  });
 
   @override
   State<ExplorePlanetGoBackButton> createState() =>
@@ -20,17 +26,22 @@ class _ExplorePlanetGoBackButtonState extends State<ExplorePlanetGoBackButton> {
           Navigator.pop(context);
         },
         style: TextButton.styleFrom(
-          backgroundColor: kWhiteColor,
+          backgroundColor: widget.isWhiteMode ? kWhiteColor : kDarkPurpleColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(defaultRadius),
           ),
         ),
         child: Text(
-          'Explore Other Planet',
-          style: blackTextStyle.copyWith(
-            fontSize: 20,
-            fontWeight: bold,
-          ),
+          widget.text,
+          style: widget.isWhiteMode
+              ? blackTextStyle.copyWith(
+                  fontSize: 20,
+                  fontWeight: bold,
+                )
+              : whiteTextStyle.copyWith(
+                  fontSize: 20,
+                  fontWeight: bold,
+                ),
         ),
       ),
     );

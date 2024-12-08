@@ -5,6 +5,7 @@ import 'package:spacepal_project/widgets/explore_planet_cards.dart';
 import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/explore_planets.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
+import 'package:spacepal_project/widgets/open_camera_button.dart';
 
 class ExplorePlanetMars extends StatelessWidget {
   const ExplorePlanetMars({super.key});
@@ -104,6 +105,7 @@ class ExplorePlanetMars extends StatelessWidget {
                       firstDesc:
                           "Mars has two tiny moons, Phobos and Deimos. They're not round like our Moon—they look more like potatoes!",
                     ),
+                    OpenCameraButton(),
                     SizedBox(
                       height: 160,
                     ),

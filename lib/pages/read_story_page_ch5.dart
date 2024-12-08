@@ -6,14 +6,14 @@ import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/read_story_text_header.dart';
 import 'package:spacepal_project/widgets/read_story_texts.dart';
 
-class ReadStoryPageCh1 extends StatefulWidget {
-  const ReadStoryPageCh1({super.key});
+class ReadStoryPageCh5 extends StatefulWidget {
+  const ReadStoryPageCh5({super.key});
 
   @override
-  State<ReadStoryPageCh1> createState() => _ReadStoryPageCh1State();
+  State<ReadStoryPageCh5> createState() => _ReadStoryPageCh5State();
 }
 
-class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
+class _ReadStoryPageCh5State extends State<ReadStoryPageCh5> {
   late final AudioPlayer player;
 
   @override
@@ -24,7 +24,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await Future.delayed(const Duration(seconds: 3));
-      await player.play(AssetSource('audio/screen1.mp3'));
+      await player.play(AssetSource('audio/screen5.mp3'));
     });
   }
 
@@ -47,7 +47,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
       children: [
         ExplorePlanetBackground(
           height: height,
-          imageUrl: 'assets/read_story_chapter1_background.png',
+          imageUrl: 'assets/read_story_chapter5_background.png',
         ),
         Container(
           margin: EdgeInsets.only(
@@ -56,8 +56,8 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
             right: defaultMargin,
           ),
           child: const ReadStoryTextHeader(
-            chapterNumber: 1,
-            title: 'Introduction',
+            chapterNumber: 5,
+            title: "Transition to Science - The Big Bang and Earth's Formation",
           ),
         ),
         Container(
@@ -70,21 +70,14 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
             children: const [
               ReadStoryTexts(
                 texts:
-                    'A long, long time ago, before there were people, animals, or even trees, there was… nothing. Just a great big emptiness called Chaos.',
+                    "Now, that's the ancient myth of how the Earth was created. But scientists tell us a different story. It's a story that takes us billions of years into the past. A story that begins with an incredible event called the Big Bang!",
               ),
               SizedBox(
                 height: 12,
               ),
               ReadStoryTexts(
                 texts:
-                    'But out of this nothingness, something amazing began to happen. The Earth, as we know it today, was born! And the story of how it happened is a mix of mystery, magic, and science.',
-              ),
-              SizedBox(
-                height: 12,
-              ),
-              ReadStoryTexts(
-                texts:
-                    "Let's go back in time and find out how the Earth was created, both in the ancient myths and the science of today!",
+                    "About 13.8 billion years ago, the universe was created in an enormous explosion called the Big Bang. This explosion scattered dust, gas, and tiny bits of stars all around space. These tiny pieces began to come together, pulled by gravity, and formed planets—including Earth",
               ),
             ],
           ),

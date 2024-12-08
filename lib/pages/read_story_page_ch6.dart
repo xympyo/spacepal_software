@@ -6,14 +6,14 @@ import 'package:spacepal_project/widgets/explore_planet_go_back_button.dart';
 import 'package:spacepal_project/widgets/read_story_text_header.dart';
 import 'package:spacepal_project/widgets/read_story_texts.dart';
 
-class ReadStoryPageCh1 extends StatefulWidget {
-  const ReadStoryPageCh1({super.key});
+class ReadStoryPageCh6 extends StatefulWidget {
+  const ReadStoryPageCh6({super.key});
 
   @override
-  State<ReadStoryPageCh1> createState() => _ReadStoryPageCh1State();
+  State<ReadStoryPageCh6> createState() => _ReadStoryPageCh6State();
 }
 
-class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
+class _ReadStoryPageCh6State extends State<ReadStoryPageCh6> {
   late final AudioPlayer player;
 
   @override
@@ -24,7 +24,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await Future.delayed(const Duration(seconds: 3));
-      await player.play(AssetSource('audio/screen1.mp3'));
+      await player.play(AssetSource('audio/screen6.mp3'));
     });
   }
 
@@ -47,7 +47,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
       children: [
         ExplorePlanetBackground(
           height: height,
-          imageUrl: 'assets/read_story_chapter1_background.png',
+          imageUrl: 'assets/read_story_chapter6_background.png',
         ),
         Container(
           margin: EdgeInsets.only(
@@ -56,8 +56,8 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
             right: defaultMargin,
           ),
           child: const ReadStoryTextHeader(
-            chapterNumber: 1,
-            title: 'Introduction',
+            chapterNumber: 6,
+            title: "How Earth Was Born",
           ),
         ),
         Container(
@@ -70,21 +70,7 @@ class _ReadStoryPageCh1State extends State<ReadStoryPageCh1> {
             children: const [
               ReadStoryTexts(
                 texts:
-                    'A long, long time ago, before there were people, animals, or even trees, there was… nothing. Just a great big emptiness called Chaos.',
-              ),
-              SizedBox(
-                height: 12,
-              ),
-              ReadStoryTexts(
-                texts:
-                    'But out of this nothingness, something amazing began to happen. The Earth, as we know it today, was born! And the story of how it happened is a mix of mystery, magic, and science.',
-              ),
-              SizedBox(
-                height: 12,
-              ),
-              ReadStoryTexts(
-                texts:
-                    "Let's go back in time and find out how the Earth was created, both in the ancient myths and the science of today!",
+                    "It wasn't easy for Earth to form. The planet was a hot, fiery ball at first, and it took millions of years for it to cool down. Over time, Earth became the beautiful planet we live on today—with oceans, continents, and life!",
               ),
             ],
           ),
