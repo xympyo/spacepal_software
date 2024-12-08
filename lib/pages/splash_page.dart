@@ -16,7 +16,7 @@ class _SplashPageState extends State<SplashPage> {
     Timer(const Duration(seconds: 3), () {
       if (mounted) {
         debugPrint("Navigating to /main");
-        Navigator.pushNamed(context, '/main');
+        Navigator.pushNamed(context, '/sign-in');
       }
     });
   }

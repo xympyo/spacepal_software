@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 
 class CameraScreen extends StatefulWidget {
+  final int numberObj;
+  const CameraScreen({
+    super.key,
+    required this.numberObj,
+  });
   @override
   _CameraScreenState createState() => _CameraScreenState();
 }
@@ -82,7 +87,11 @@ class _CameraScreenState extends State<CameraScreen> {
             child: Cube(
               onSceneCreated: (Scene scene) => scene.world.add(
                 Object(
-                  fileName: 'assets/3d/planetEarth.obj',
+                  fileName: widget.numberObj == 1
+                      ? 'assets/3d/planetEarth.obj'
+                      : widget.numberObj == 2
+                          ? 'assets/3d/planetMars.obj'
+                          : 'assets/3d/planetVenus.obj',
                   scale: Vector3(4, 4, 4),
                   position: Vector3(0, 0, -1),
                 ),

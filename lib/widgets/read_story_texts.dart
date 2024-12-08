@@ -15,7 +15,11 @@ class ReadStoryTexts extends StatelessWidget {
     return Text(
       texts,
       style: isWhite
-          ? whiteTextStyle
+          ? whiteTextStyle.copyWith(
+              fontSize: 16,
+              fontWeight: regular,
+              decoration: TextDecoration.none,
+            )
           : blackTextStyle.copyWith(
               fontSize: 16,
               fontWeight: regular,

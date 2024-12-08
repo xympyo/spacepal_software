@@ -105,7 +105,10 @@ class ExplorePlanetMars extends StatelessWidget {
                       firstDesc:
                           "Mars has two tiny moons, Phobos and Deimos. They're not round like our Moon—they look more like potatoes!",
                     ),
-                    OpenCameraButton(),
+                    OpenCameraButton(
+                      numberObj: 2,
+                      whichPlanet: 2,
+                    ),
                     SizedBox(
                       height: 160,
                     ),

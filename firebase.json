@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"spacepal-db","appId":"1:383386710881:android:c72fd83085675541bd4b20","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"spacepal-db","configurations":{"android":"1:383386710881:android:c72fd83085675541bd4b20","ios":"1:383386710881:ios:0a4e13a4b22c8207bd4b20"}}}}}}

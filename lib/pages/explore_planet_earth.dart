@@ -110,7 +110,10 @@ class ExplorePlanetEarth extends StatelessWidget {
                     SizedBox(
                       height: 40,
                     ),
-                    OpenCameraButton(),
+                    OpenCameraButton(
+                      numberObj: 1,
+                      whichPlanet: 1,
+                    ),
                     SizedBox(
                       height: 160,
                     ),

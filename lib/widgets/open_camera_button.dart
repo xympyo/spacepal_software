@@ -1,9 +1,36 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:spacepal_project/pages/camera_screen.dart';
 import 'package:spacepal_project/shared/theme.dart';
+import 'package:spacepal_project/shared/global.dart' as globals;
 
-class OpenCameraButton extends StatelessWidget {
-  const OpenCameraButton({super.key});
+class OpenCameraButton extends StatefulWidget {
+  final int numberObj;
+  final int whichPlanet;
+  const OpenCameraButton({
+    super.key,
+    required this.numberObj,
+    required this.whichPlanet,
+  });
+
+  @override
+  State<OpenCameraButton> createState() => _OpenCameraButtonState();
+}
+
+class _OpenCameraButtonState extends State<OpenCameraButton> {
+  Future<void> _updateAchievement() async {
+    try {
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(globals.username)
+          .update({
+        'isAchieved${widget.whichPlanet}': true,
+      });
+      print("User updated successfully!");
+    } catch (e) {
+      print("Error updating user!");
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +42,12 @@ class OpenCameraButton extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => CameraScreen(),
+              builder: (context) => CameraScreen(
+                numberObj: widget.numberObj,
+              ),
             ),
           );
+          _updateAchievement();
         },
         style: TextButton.styleFrom(
           backgroundColor: kWhiteColor,

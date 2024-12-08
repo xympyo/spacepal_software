@@ -5,10 +5,16 @@ import 'package:spacepal_project/shared/theme.dart';
 import 'package:spacepal_project/widgets/explore_planet_background.dart';
 import 'package:spacepal_project/widgets/funfact_cards.dart';
 import 'package:spacepal_project/widgets/hello_text_header.dart';
+import 'package:spacepal_project/shared/global.dart' as globals;
 
-class FunFactPage extends StatelessWidget {
+class FunFactPage extends StatefulWidget {
   const FunFactPage({super.key});
 
+  @override
+  State<FunFactPage> createState() => _FunFactPageState();
+}
+
+class _FunFactPageState extends State<FunFactPage> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -85,6 +91,8 @@ class FunFactPage extends StatelessWidget {
                     FunfactCards(
                       objUrl: 'assets/3d/planetEarth.obj',
                       planetName: 'Earth',
+                      planet: 1,
+                      isLocked: globals.isAchieved1,
                       onTap: () {
                         Navigator.push(
                           context,
@@ -100,6 +108,8 @@ class FunFactPage extends StatelessWidget {
                     FunfactCards(
                       objUrl: 'assets/3d/planetMars.obj',
                       planetName: 'Mars',
+                      isLocked: globals.isAchieved2,
+                      planet: 2,
                       onTap: () {
                         Navigator.push(
                           context,
@@ -115,6 +125,8 @@ class FunFactPage extends StatelessWidget {
                     FunfactCards(
                       objUrl: 'assets/3d/planetVenus.obj',
                       planetName: 'Venus',
+                      isLocked: globals.isAchieved3,
+                      planet: 3,
                       onTap: () {
                         Navigator.push(
                           context,
