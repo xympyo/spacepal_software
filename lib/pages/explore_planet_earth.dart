@@ -108,7 +108,7 @@ class ExplorePlanetEarth extends StatelessWidget {
                           "Fun fact: The Moon's gravity creates tides—the rise and fall of the ocean's water.",
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 60,
                     ),
                     OpenCameraButton(
                       numberObj: 1,

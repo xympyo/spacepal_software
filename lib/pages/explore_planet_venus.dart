@@ -105,6 +105,9 @@ class ExplorePlanetVenus extends StatelessWidget {
                       firstDesc:
                           "Venus has no moons. It's one of the few planets that doesn't have any!",
                     ),
+                    SizedBox(
+                      height: 60,
+                    ),
                     OpenCameraButton(
                       numberObj: 3,
                       whichPlanet: 3,
