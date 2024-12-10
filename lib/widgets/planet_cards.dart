@@ -41,7 +41,7 @@ class _PlanetCardsState extends State<PlanetCards> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               width: 120,
               height: 120,
               child: Cube(

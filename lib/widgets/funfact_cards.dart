@@ -33,7 +33,7 @@ class _FunfactCardsState extends State<FunfactCards> {
   }
 
   void _startPeriodicCall() {
-    Timer.periodic(Duration(seconds: 30), (timer) {
+    Timer.periodic(const Duration(seconds: 30), (timer) {
       getUserAchievements();
       print("Function called!");
     });

@@ -14,7 +14,7 @@ class ExplorePlanets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 214,
       height: 214,
       child: Cube(

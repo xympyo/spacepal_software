@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:spacepal_project/pages/explore_planet_earth.dart';
 import 'package:spacepal_project/pages/explore_planet_mars.dart';

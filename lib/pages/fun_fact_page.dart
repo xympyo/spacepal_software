@@ -30,7 +30,7 @@ class _FunFactPageState extends State<FunFactPage> {
             right: defaultMargin,
             top: 60,
           ),
-          child: HelloTextHeader(
+          child: const HelloTextHeader(
             firstText: "Let's dive into Space!,",
             secondText: "Star Seekers",
             needImage: true,

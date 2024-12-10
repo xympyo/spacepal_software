@@ -65,17 +65,17 @@ class _CameraScreenState extends State<CameraScreen> {
   @override
   Widget build(BuildContext context) {
     if (!_isInitialized) {
-      return Center(
+      return const Center(
         child: CircularProgressIndicator(),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("The Planet?"),
+        title: const Text("The Planet?"),
         actions: [
           IconButton(
-            icon: Icon(Icons.switch_camera),
+            icon: const Icon(Icons.switch_camera),
             onPressed: _switchCamera,
           ),
         ],
@@ -109,7 +109,7 @@ class _CameraScreenState extends State<CameraScreen> {
             print('Error capturing image: $e');
           }
         },
-        child: Icon(Icons.camera_alt),
+        child: const Icon(Icons.camera_alt),
       ),
     );
   }

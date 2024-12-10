@@ -80,7 +80,7 @@ class FunfactContentImage extends StatelessWidget {
             child: Container(
               width: 32,
               height: 32,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/icon_heart.png'),
                 ),

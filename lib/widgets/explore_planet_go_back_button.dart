@@ -18,7 +18,7 @@ class ExplorePlanetGoBackButton extends StatefulWidget {
 class _ExplorePlanetGoBackButtonState extends State<ExplorePlanetGoBackButton> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: 60,
       child: TextButton(
