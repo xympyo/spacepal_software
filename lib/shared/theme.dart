@@ -1,25 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-double defaultMargin = 24.0;
+double defaultMargin = 32.0;
 double defaultRadius = 12.0;
 
-Color kDarkPurpleColor = const Color(0xff2E073F);
-Color kLightPurpleColor = const Color(0xff7A1CAC);
-Color kWhiteColor = const Color(0xffeeeeee);
-Color kYellowColor = const Color(0xffEC8305);
-Color kBackgroundColor = const Color(0xfffafafa);
-Color kInactiveColor = const Color(0xff9698A9);
+Color kPrimaryColor = const Color(0xff9F9CCC);
+Color kPrimaryLightColor = const Color(0xffECECFA);
+Color kSecondaryColor = const Color(0xffEFABA7);
+Color kWhiteColor = const Color(0xffFFFFFF);
+Color kTriaryColor = const Color(0xffFCEEEC);
+Color kBlackColor = const Color(0xff30313E);
+Color kTeksColor = const Color(0xff663835);
+Color kRedDangerColor = const Color(0xffF32013);
+Color kGreenSafeColor = const Color(0xff00FF00);
 Color kTransparentColor = Colors.transparent;
 
-TextStyle whiteTextStyle = GoogleFonts.poppins(
+TextStyle primaryTextStyle = GoogleFonts.poppins(
+  color: kBlackColor,
+);
+TextStyle primaryLightTextStyle = GoogleFonts.poppins(
+  color: kPrimaryLightColor,
+);
+TextStyle secondaryTextStyle = GoogleFonts.poppins(
+  color: kSecondaryColor,
+);
+TextStyle whtieTextStyle = GoogleFonts.poppins(
   color: kWhiteColor,
 );
-TextStyle blackTextStyle = GoogleFonts.poppins(
-  color: kDarkPurpleColor,
+TextStyle triaryTextStyle = GoogleFonts.poppins(
+  color: kTriaryColor,
 );
-TextStyle purpleTextStyle = GoogleFonts.poppins(
-  color: kLightPurpleColor,
+TextStyle blackTextStyle = GoogleFonts.poppins(
+  color: kBlackColor,
+);
+TextStyle teksTextStyle = GoogleFonts.poppins(
+  color: kTeksColor,
+);
+TextStyle redDangerTextStyle = GoogleFonts.poppins(
+  color: kRedDangerColor,
+);
+TextStyle greenSafeTextStyle = GoogleFonts.poppins(
+  color: kGreenSafeColor,
 );
 
 FontWeight light = FontWeight.w300;
